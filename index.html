@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Ðapps - Hello World</title>
-  <script type="text/javascript" src="trc.js"></script>
-</head>
-<body>
-  <hr>
-  簡単なルール説明（前提：metamaskを使って、ROPSTENに接続してください！）
-  <hr>
-  ・以下が事実だと思ったら、I bet it is true！のボタンを押してね！<br>
-  ・もし嘘だと思ったら、I bet it is fake!を押してね！<br>
-  ・バランスを押せば、現在賭けられている全額を表示します！<br>
-  ・どれくらい賭けられてる？Tell Me!を押すと、（嘘だと思ってる人、本当だと思ってる人）の順番で表示されます。<br>
-  ・TRCを終了します！　を押すと、賭けを終了します！<font color="red">多数決で多かった方に掛け金を均等分配します！</font>
-  <hr>
-  命題:ブロックチェーンには壮大な未来がある！<br>
-  <hr>
-<!--  <div id="contract_result">loading...</div> /-->
-  <br>
-  <hr>
-  <div id="idBalance">下のバランスボタンを押すとバランスを表示します！</div>
-  <hr>
-<!--  <div id="idhowManyBets">loading...</div> -->
-  <div id="idhowManyBets2">「どれくらい賭けられている」ボタンを押すと（嘘、本当）の順番で賭けている人数が表示</div>
-  <hr>
-
-<!--  <div id="idForTrueAddress">loading...</div>
-  <hr>
-  <div id="idForFakeAddress">loading...</div>
-  <hr>
-  <div id="idForTrueAddress">loading...</div>
-  <hr>　-->
-
-  <form name="test">
-    <input type="button" value="バランス" onClick="pleaseShowMeBalance()">
-  </form>
-  <form name="test">
-    <input type="button" value="どれくらい賭けられてる？Tell Me!" onClick="howManyBets2()">
-  </form>
-
-
-  <form name="test">
-    <input type="button" value="I bet it is true！" onClick="IBetForTrue()">
-  </form>
-  <form name="test">
-    <input type="button" value="I bet it is fake！" onClick="IBetForFake()">
-  </form>
-
-  <form name="test">
-    <input type="button" value="TRCを終了します！" onClick="ITerminateTheBet()">
-  </form>
-
-</body>
+ <head>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="index.css">
+   <script type="text/javascript" src="trc.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ </head>
+ <body>
+   <div class="ImageTabelog">
+     <p><img src="image.png" alt="食べログ"></p>
+   </div>
+   <div class="container">
+    <div class="row justify-content-end">
+     <div class="col-2.5">
+       <div class="button" onClick="IBetForTrue()">
+        <a class="btn">
+         <img src="like.png" alt="">
+        </a>
+      </div>
+     </div>
+     <div class="col-3">
+       <div class="button" onClick="IBetForFake()">
+       <a class="btn">
+         <img src="dislike.png" alt="">
+       </a>
+      </div>
+    </div>
+   </div>
+ </div>
+ </body>
 </html>
+
+
+<!-- <form name="test">
+  <input type="button" value="I bet it is true！" onClick="IBetForTrue()">
+</form>
+<form name="test">
+  <input type="button" value="I bet it is fake！" onClick="IBetForFake()">
+</form> -->
