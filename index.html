@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ðapps - Hello World</title>
+  <script type="text/javascript" src="trc.js"></script>
+</head>
+<body>
+  <hr>
+  簡単なルール説明（前提：metamaskを使って、ROPSTENに接続してください！）
+  <hr>
+  ・以下が事実だと思ったら、I bet it is true！のボタンを押してね！<br>
+  ・もし嘘だと思ったら、I bet it is fake!を押してね！<br>
+  ・バランスを押せば、現在賭けられている全額を表示します！<br>
+  ・どれくらい賭けられてる？Tell Me!を押すと、（嘘だと思ってる人、本当だと思ってる人）の順番で表示されます。<br>
+  ・TRCを終了します！　を押すと、賭けを終了します！<font color="red">多数決で多かった方に掛け金を均等分配します！</font>
+  <hr>
+  命題:ブロックチェーンには壮大な未来がある！<br>
+  <hr>
+<!--  <div id="contract_result">loading...</div> /-->
+  <br>
+  <hr>
+  <div id="idBalance">下のバランスボタンを押すとバランスを表示します！</div>
+  <hr>
+<!--  <div id="idhowManyBets">loading...</div> -->
+  <div id="idhowManyBets2">「どれくらい賭けられている」ボタンを押すと（嘘、本当）の順番で賭けている人数が表示</div>
+  <hr>
+
+<!--  <div id="idForTrueAddress">loading...</div>
+  <hr>
+  <div id="idForFakeAddress">loading...</div>
+  <hr>
+  <div id="idForTrueAddress">loading...</div>
+  <hr>　-->
+
+  <form name="test">
+    <input type="button" value="バランス" onClick="pleaseShowMeBalance()">
+  </form>
+  <form name="test">
+    <input type="button" value="どれくらい賭けられてる？Tell Me!" onClick="howManyBets2()">
+  </form>
+
+
+  <form name="test">
+    <input type="button" value="I bet it is true！" onClick="IBetForTrue()">
+  </form>
+  <form name="test">
+    <input type="button" value="I bet it is fake！" onClick="IBetForFake()">
+  </form>
+
+  <form name="test">
+    <input type="button" value="TRCを終了します！" onClick="ITerminateTheBet()">
+  </form>
+
+</body>
+</html>
